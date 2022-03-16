@@ -9,5 +9,5 @@ def home():
 
 @gg.route('/new-blog')
 def blog():
-    return render_template("blog.html")
+    return render_template("blog.html" )
 

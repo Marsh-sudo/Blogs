@@ -20,7 +20,7 @@ def create_app():
     mail.init_app(app)
 
     #initializing bootstrap
-    bootstrap.init_app(app)
+    bootstrap.init_app(app )
     
 
     from .views import gg

@@ -12,7 +12,7 @@ class User(db.Model,UserMixin):
 
 class Blog(db.Model):
     id = db.Column(db.Integer,primary_key=True)
-    text = db.Column(db.String(20000))
+    text = db.Column(db.String(20000) )
     date = db.Column(db.DateTime(timezone=True),default=func.now())
     user_id = db.Column(db.Integer,db.ForeignKey('user.id'))
 
